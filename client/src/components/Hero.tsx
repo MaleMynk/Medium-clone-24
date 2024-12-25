@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import mmm from "../assets/mmm.png";
-
+import scne from "../assets/scne.png";
 export default function Hero() {
   return (
     <div
@@ -32,6 +32,7 @@ export default function Hero() {
               fontSize: "100px",
               fontFamily: "DM Serif Display",
               zIndex: 99,
+              
             }}
           >
             Stay curious.
@@ -71,7 +72,7 @@ export default function Hero() {
               top: 0,
               padding: "15px 0",
             }}
-            src={mmm}
+            src={scne}
             alt=""
           />
         </div>

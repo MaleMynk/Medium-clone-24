@@ -13,6 +13,7 @@ import { Server } from "socket.io";
 import User from "./models/user";
 const server = createServer(app);
 
+
 const isProd = !env.DEV;
 if (isProd) {
   app.use(logger);
@@ -68,10 +69,14 @@ io.on("connection", (socket) => {
   });
 });
 
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the server!");
+});
+
 app.get("/test", (req, res) => {
   res.send("Hello from server side");
 });
-
 app.use("/post", postRouter);
 app.use("/auth", authRouter);
 app.use("/user", userRouter);

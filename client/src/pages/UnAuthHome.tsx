@@ -8,7 +8,7 @@ export default function UnAuthHome() {
   const { hideNavbar } = useAppContext();
   useEffect(() => {
     hideNavbar(true);
-    document.title = "Medium – Where good ideas find you.";
+    document.title = "The Banyan Tree – Serene, yet Sound";
     return () => hideNavbar(false);
   }, []);
   return (
